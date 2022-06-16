@@ -6,6 +6,10 @@ import pprint
 
 def read_file(file):
     """Reads en entire file and returns file bytes."""
+    
+    #нужно добавить возможность читать только первый
+    #мегабайт файла для ускорения работы на больших файлах
+    
     buf_size = 16384  # 16 kilo bytes
     b = b""
     with open(file, "rb") as f:
